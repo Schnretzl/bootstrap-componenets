@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Tech Solutions</title>
+</head>
+<body>
+    
+    <!-- Task 1: Implement a Responsive Navigation Bar component into your "Tech Solutions" webpage to create a responsive navigation bar that collapses into a toggleable menu on smaller screens. -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Tech Solutions</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section class="container my-5 text-bg-dark">
+        <div class="row">
+            <h1 class="mb-4 fw-bold text-center">Tech Solutions</h1>
+            <h2 class="h3">Our Services</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <img src="erik-mclean-sxiSod0tyYQ-unsplash.jpg" class="img-fluid" alt="Laptop displaying error">
+                    <h3 class="fw-semibold">Laptop Repair</h3>
+                    <p class="lh-sm">We can fix any problems with your laptop</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <img src="kilian-seiler-PZLgTUAhxMM-unsplash.jpg" class="img-fluid" alt="Cracked mobile screen">
+                    <h3 class="fw-semibold">Mobile Repair</h3>
+                    <p class="lh-sm">An old, cracked screen is no problem for us</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <img src="michael-geiger-JJPqavJBy_k-unsplash.jpg" class="img-fluid" alt="Software installation">
+                    <h3 class="fw-semibold">Virus Removal</h3>
+                    <p class="lh-sm">Let us clean up those nasty viruses on your computer and see how much better it will run</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <section>
+        <table class="table table-striped">
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Laptop Repair</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Mobile Repair</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Virus Removal</td>
+                <td>$75</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="col-4 m-4">
+        <h2>Contact Us</h2>
+        <form>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <select class="form-select mb-3" aria-label="Services you are interested in:">
+                    <option selected>Select the service you are interested in</option>
+                    <option value="1">Laptop Repair</option>
+                    <option value="2">Mobile Repair</option>
+                    <option value="3">Virus Removal</option>
+                    <option value="4">Other</option>
+                  </select>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Describe your issue</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+              </form>
+        </form>
+    </section>
+</body>
+</html>
